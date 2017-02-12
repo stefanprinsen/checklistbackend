@@ -15,8 +15,6 @@ $app->get('/', function () use ($app) {
     return $app->version();
 });
 
-
-
 $app->get('/api/checklistitems', 'CheckListItemController@index');
 $app->get('/api/checklistitems/{id}', 'CheckListItemController@getCheckListItem');
 $app->post('/api/checklistitems', 'CheckListItemController@saveCheckListItem');
